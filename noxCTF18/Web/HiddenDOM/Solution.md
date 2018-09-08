@@ -27,21 +27,38 @@ Which looks like that: http://chal.noxale.com:5588/index.php?target=
 Lets try to do this thingie:
 http://chal.noxale.com:5588/index.php?target=http://chal.noxale.com:5588/index.php
 
-Why? because ?target= requesting from us to write a URL.
+Why? because itd requesting from us to write a URL there.
 Why not trying to put the site URL itself?
 Hey, Intesting.. look what we got:
+
 [![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_5.png)]
 
+Looks like it Printed in this textarea a part from the html code?
+intersting.. maybe we can later use this intersing mechanism.
 
-
-In firefox by clicking on the Keyboard on F12, we can work with a tool called a Console,
-
-which can help us to understand client sided javascript which the page holds.
+Lets look around in the interesting looking Javascript we saw in the Source code,
 
 In our first interesting code there are 3 variables which are a bit difficult to understand:
 
 _0x3bc3 , _frss , _xEger
 
-, some things represents Hexdecimal, and some just for the choise of the coder.
+We can see that _0x3bc3 is a list?
+and the other variables are using some items from that list.
+Some things represents Hexdecimal, and some just for the choise of the coder.
+
+In firefox by clicking on the Keyboard on F12, we can work with a tool called a Console,
+
+which can help us to understand client sided javascript which the page holds.
+
 by working with the console we can understand abit more about them,
 by it translating to us humans the meaning.
+
+lets call that variable _0x3bc3 and see what it holds:
+
+[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_6.png)]
+
+Alright... some human laguage!
+
+lets try to translate the Javascript Code, in our beloved Notepadd++ by putting each name in its called place:
+[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_7.png)]
+
