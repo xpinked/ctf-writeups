@@ -108,3 +108,94 @@ We got a new line, in our previous try we didnt have that line:
  
  So it did represented a sort of a regex filter!
 
+So what we have here?
+
+We have expression, which represents the regex filter.
+
+And we have target, which represents the URL
+
+What we saw in out gameplay?
+
+When we write the URL in targe, the sites "reads the file" from our distant web server,
+
+And a regex in our expression, tels the site which in our "readed file" to filter out and to print in our text box aree.
+
+We know our goal right?
+
+Every CTF has a goal, and as the name posses, we need to capture a flag.
+
+I didn't wrote my first hint in the source code earlier, in this long last story telling,
+
+I saw this hint :
+
+[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_11.png)]
+
+As we know, ngnix/apache etc... there is always a default directory for a site server to work from,
+
+And this hint tells us, there is a file in the web server default directory, which called flag.txt .
+
+Of course it missleading at first, becuase as we all try at first to write this location file in our main url, to try our luck.
+
+But yeah.. as we can see...
+
+[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_12.png)]
+
+It is forbidden. :3
+
+looking back in our previous work,
+
+We have an awsome tools, target, and expression.
+
+Maybe we can use those tools to extract the content of that flag.txt file.
+
+But how can we try our luck? and tell those tools to tell the site to enter its own domain, and files and read their contents?
+
+Sometime in your life, you know that webrowsers can see content of files in your own computer,
+
+while looks somthing like that : file:///{My_File_location}/{Name_of_File}.{Extention}
+
+lets try that thingie!
+
+[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_13.png)]
+
+Woah! we can guess it worked?!?!?!
+
+Cuz that textarea is there but its blanked!
+
+Ohhhhh!! right!! the regex!!!
+
+Lets look again at this thingie in expression:
+
+/<[^<>]{1,}id[^<>]{1,}>/
+
+I think what it dose, it searches for the somthing which holds the the string id which its location is inside a place which starts which < and ends with >
+
+looking back in our previous challenges there is a specific way for a flag looks:
+
+here is an example for a flag: noxCTF{somthing somthing somthing}
+
+in our regex thingie in expression, lets for it to look like somthing which tells that thing:
+
+search for nothing, but include all things inside those curly brackets {}.
+
+lets try this regex thingie: /{[^{}]{0,}[^{}]{0,}>/  # i donnot it looks like an ascii picture of some sort haha :3
+
+[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_14.png)]
+
+OMG!!! IT WORKED!!!
+
+Hurry!! HURRY !! GODD DAMMIT PUT IT FAST AND EARN THOSE GOD DAMM POINTS!
+
+[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_15.png)]
+
+And thats how babies are made.....
+
+Oh wait.. that's a diffrent story!
+
+Well That's it !
+
+Was a very interesting challenge,
+
+Thank you noxale for this awsome challenge,
+
+looking for more challenges in the future!
