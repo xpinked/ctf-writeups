@@ -62,3 +62,24 @@ Alright... some human laguage!
 lets try to translate the Javascript Code, in our beloved Notepadd++ by putting each name in its called place:
 [![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_7.png)]
 
+Alright! We have a DOM!
+looking at it we can see there is a input which this script creates,
+lets call the most called variable there,
+_xEger in our Console, lets see what it dose:
+[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_8.png)]
+
+Intersting indeed, as we saw in our "Translated Code" it actually dose creates a new input which called "expression".
+Maybe it works like our previous discovery, "target", maybe its a GET parameter as well?
+And also by looking closely we can see that its default input is this string:
+" /<[^<>]{1,}hidden[^<>]{1,}>/ "
+I donno it looks like some sort of regex?
+lets try to add this new discovery to our URL, with a bit of a twist,
+instead of its default, lets write that: /<[^<>]{1,}id[^<>]{1,}>/
+and lets see what we got.
+We try this URL: http://chal.noxale.com:5588/index.php?expression=/<[^<>]{1,}id[^<>]{1,}>/&target=http://chal.noxale.com:5588
+
+[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_9.png)]
+
+OMG! It Actually changed somthing!
+We got a new line, in our previous try we didnt have that line:
+ ""\<form action="index.php" id="main_form" style="position:sticky;"\> ""
