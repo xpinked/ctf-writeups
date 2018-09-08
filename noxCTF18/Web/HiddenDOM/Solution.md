@@ -15,24 +15,22 @@ Such a beautiful picure *dazle*
 As the usual game, we click on everything,writing jibrish,and trying to see antything we can work with,
 
 oh right.. and opening the source page of course.
-[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_3.png)]
 
-Here we go, we have a lead.
+Here we go! We have our first lead!
 
 In the source code we see this intresting code
-
+[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_3.png)]
  
-
-And by clicking on the Check button. in the url we can see an option for input in GET parameter called target:
-
+We can see there is an option to write a URL and clicking Check,
+By doing soo, We're discovering a GET option in the url
 Which looks like that: http://chal.noxale.com:5588/index.php?target=
 Lets try to do this thingie:
-
 http://chal.noxale.com:5588/index.php?target=http://chal.noxale.com:5588/index.php
 
 Why? because ?target= requesting from us to write a URL.
 Why not trying to put the site URL itself?
 Hey, Intesting.. look what we got:
+[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_4.png)]
 
 
 
