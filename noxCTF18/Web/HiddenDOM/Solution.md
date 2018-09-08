@@ -106,7 +106,7 @@ OMG! It Actually changed somthing!
 
 We got a new line, in our previous try we didnt have that line:
 
- <form action="index.php" id="main_form" style="position:sticky;">
+form action="index.php" id="main_form" style="position:sticky;"
  
  So it did represented a sort of a regex filter!
 
