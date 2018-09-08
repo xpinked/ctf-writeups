@@ -2,19 +2,20 @@
 
 One of the challenges i participated with was this Web challege called HiddenDOM,
 At first glance in the name i knew some "JavaScript HTML DOM Knowledge"[1] was required, hmm let's see.
-
+[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_1.png)]
 
 We're getting here a nicelooking story, and a url :3
 
 let's go inside.
 
-(https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_1.png)
+[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_2.png)]
 
 Such a beautiful picure *dazle*
 
 As the usual game, we click on everything,writing jibrish,and trying to see antything we can work with,
 
 oh right.. and opening the source page of course.
+[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_3.png)]
 
 Here we go, we have a lead.
 
