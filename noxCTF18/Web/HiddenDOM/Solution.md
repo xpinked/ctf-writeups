@@ -33,7 +33,7 @@ Lets try to do this thingie:
 
 http://chal.noxale.com:5588/index.php?target=http://chal.noxale.com:5588/index.php
 
-Why? because itd requesting from us to write a URL there.
+Why? because its requesting from us to write a URL there.
 
 Why not trying to put the site URL itself?
 
@@ -75,8 +75,10 @@ lets try to translate the Javascript Code, in our beloved Notepadd++ by putting 
 [![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_10.png)]
 
 Alright! We have a DOM!
-looking at it we can see there is a input which this script creates,
+looking at it we can see there is an input which this script creates,
+
 lets call the most called variable there,
+
 _xEger in our Console, lets see what it dose:
 
 [![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_8.png)]
@@ -178,7 +180,7 @@ in our regex thingie in expression, lets for it to look like somthing which tell
 
 search for nothing, but include all things inside those curly brackets {}.
 
-lets try this regex thingie: /{[^{}]{0,}[^{}]{0,}>/  # i donnot it looks like an ascii picture of some sort haha :3
+lets try this regex thingie: /{[^{}]{0,}[^{}]{0,}>/  # i donno it looks like an ascii picture of some sort haha :3
 
 [![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_14.png)]
 
