@@ -72,7 +72,7 @@ Alright... some human laguage!
 
 lets try to translate the Javascript Code, in our beloved Notepadd++ by putting each name in its called place:
 
-[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_7.png)]
+[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_10.png)]
 
 Alright! We have a DOM!
 looking at it we can see there is a input which this script creates,
