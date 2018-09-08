@@ -8,9 +8,7 @@ We're getting here a nicelooking story, and a url :3
 
 let's go inside.
 
-
-
-
+[![N|Solid]()](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_2.png)
 
 
 
