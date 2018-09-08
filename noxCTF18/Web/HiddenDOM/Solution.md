@@ -30,7 +30,7 @@ http://chal.noxale.com:5588/index.php?target=http://chal.noxale.com:5588/index.p
 Why? because ?target= requesting from us to write a URL.
 Why not trying to put the site URL itself?
 Hey, Intesting.. look what we got:
-[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_4.png)]
+[![N|Solid](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_5.png)]
 
 
 
