@@ -5,5 +5,6 @@ At first glance in the name i knew some "JavaScript HTML DOM Knowledge"[1] was r
 
 
 ![pic1](https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_1.png)
-    
+   
+ <img src="https://raw.githubusercontent.com/xpinked/ctf-writeups/master/noxCTF18/Web/HiddenDOM/Screenshots/Screenshot_1.png" alt="Smiley face" height="42" width="42">
 
