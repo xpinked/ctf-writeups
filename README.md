@@ -1,2 +1,2 @@
 # ctf-writeups
-Capture The Flags Writes Ups
+InfoSec, Capture The Flags Writes Ups
